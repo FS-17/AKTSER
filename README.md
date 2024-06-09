@@ -27,7 +27,7 @@ Use AKTSER directly on Telegram:
 
 ## Audio Analysis
 
-We've conducted a thorough analysis of audio data to optimize AKTSER's performance. Check out `analyze.ipynb` for insights into:
+We've conducted a thorough analysis of audio data to optimize AKTSER's performance. Check out [`analyze.ipynb`](analyze.ipynb) for insights into:
 
 - 📊 Maximum, minimum, and average sound levels
 - 📈 Standard deviation and variance of sound
@@ -35,7 +35,7 @@ We've conducted a thorough analysis of audio data to optimize AKTSER's performan
 
 Our analysis uses libraries like `librosa`, `numpy`, and `matplotlib` to process and visualize audio data. This ensures that AKTSER accurately trims silence without affecting the message content.
 
-![Audio Analysis](assets/audio_analysis.png)
+[![Audio Analysis](assets/audio_analysis.png)](analyze.ipynb)
 
 ## Self-Hosting
 
@@ -104,9 +104,9 @@ Our analysis uses libraries like `librosa`, `numpy`, and `matplotlib` to process
 - `/convert`: Convert a voice message to text
 - `/cut`: Trim silence from a voice message
 
-## testing
+## Testing
 
-### summarize
+### Summarize
 
 [test2.ogg](assets/test2.ogg) summary:
 ```Markdown
@@ -148,13 +148,13 @@ This is test voice for Axar. I will talk, and I will take a long silent to act a
 
 ```
 
-### convert
+### Convert
 [test0.wav](assets/test0.wav) text:
 ```Markdown
 This is test voice for Alexa I will talk and I will take a long silent to act as I am thinking to see if it can turn my voice
 ```
 
-### cut
+### Cut
 You can listen to the trimmed audio [here](assets/), the files ending with `_cut` are the trimmed audio files.
 
 
