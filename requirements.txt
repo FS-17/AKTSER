@@ -1,0 +1,8 @@
+pyrogram
+TgCrypto
+python-dotenv
+google-generativeai
+librosa
+numpy
+soundfile
+uvloop
