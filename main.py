@@ -26,7 +26,7 @@ async def start(_, message: types.Message):
     Returns:
         None
     """
-    await message.reply("Hello! I'm a bot that can help you to summarize your voice messages. Just send me a voice message and I'll summarize it for you.\n\nif you want more information, send /help command\n\nMade with ❤️ by [FS-17](https: // github.com/FS-17)")
+    await message.reply("Hello! I'm a bot that can help you to summarize your voice messages. Just send me a voice message and I'll summarize it for you.\n\nif you want more information, send /help command\n\nMade with ❤️ by [FS-17](https://github.com/FS-17)")
 
 
 # if user send /convert command
@@ -161,14 +161,14 @@ async def cut(_, message: types.Message):
 
 @ app.on_message(filters.command("help"))
 async def help(_, message: types.Message):
-    await message.reply("the bot can make 3 things: \n1. summarize the voice message with /summarize command\n2. convert the voice message to text with /convert command\n3. cut the silence from the voice message with /cut command\n\nMade with ❤️ by[FS-17](github.com/FS-17)")
+    await message.reply_video("assets/howToUse.mp4")
+    await message.reply("The bot can make 3 things: \n1. summarize the voice message with /summarize command\n2. convert the voice message to text with /convert command\n3. cut the silence from the voice message with /cut command\n\nMade with ❤️ by [FS-17](https://github.com/FS-17)")
 
 
-# echo for testing
+# any other message
 @ app.on_message()
-async def echo(_, message: types.Message):
-    print(message.text)
-    await message.reply(message.text)
+async def other(_, message: types.Message):
+    await message.reply("I can't understand this command, please send /help to see the commands")
 
 
 if __name__ == "__main__":
